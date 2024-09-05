@@ -1,5 +1,5 @@
 
-import 'package:doctor_appointment_project/view/screen/bottom_navi_bar/bottom_navi_bar.dart';
+import 'package:doctor_appointment_project/view/screen/hospital_screen/hospital_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNaviBar(),
+      home: HospitalList(),
     );
   }
 }

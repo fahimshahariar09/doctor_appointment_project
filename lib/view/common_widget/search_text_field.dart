@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
 class SearchTextField extends StatelessWidget {
-  const SearchTextField({super.key});
+  const SearchTextField({
+    super.key,
+    required this.hText,
+    required this.icon,
+  });
+
+  final String hText;
+  final Icon icon;
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,20 +24,26 @@ class SearchTextField extends StatelessWidget {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        hintText: "Search Hospital for doctor",
+        hintText: hText,
         hintStyle: const TextStyle(
           color: Colors.grey,
         ),
-        suffixIcon: IconButton(
-            onPressed: () {},
-            icon: Container(
-                height: 46,
-                width: 46,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: const Color(0xff22A6FE),
+        suffixIcon: Padding(
+          padding: const EdgeInsets.only(right: 5),
+          child: Container(
+            height: 40,
+            width: 46,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.blue,
+            ),
+            child: icon ??
+                Icon(
+                  Icons.search,
+                  color: Colors.white,
                 ),
-                child: const Icon(Icons.search,color: Colors.white,))),
+          ),
+        ),
       ),
     );
   }

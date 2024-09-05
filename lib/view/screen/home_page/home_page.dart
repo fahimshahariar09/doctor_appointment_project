@@ -11,20 +11,17 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Image.asset(
           "assets/icon/Medico.png",
-          height: 32,
           width: 114,
+          height: 32,
         ),
         centerTitle: true,
         actions: [
           IconButton(
               onPressed: () {},
               icon: const Icon(
-                Icons.notifications_none_rounded,
+                Icons.notifications_none_outlined,
                 size: 30,
-              )),
-          const SizedBox(
-            width: 15,
-          )
+              ))
         ],
       ),
       body: SafeArea(
@@ -36,7 +33,10 @@ class HomePage extends StatelessWidget {
                 buildSizedBox(height: 10),
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
-                  child: SearchTextField(),
+                  child: SearchTextField(
+                    hText: 'Search Hospital for doctor',
+                    icon: Icon(Icons.search,color: Colors.white,size: 25,),
+                  ),
                 ),
                 buildSizedBox(height: 20),
                 SingleChildScrollView(
@@ -49,14 +49,18 @@ class HomePage extends StatelessWidget {
                         height: 140,
                         fit: BoxFit.cover,
                       ),
-                      const SizedBox(width: 5,),
+                      const SizedBox(
+                        width: 5,
+                      ),
                       Image.asset(
                         "assets/slider/slide.png",
                         width: 216,
                         height: 140,
                         fit: BoxFit.cover,
                       ),
-                      const SizedBox(width: 5,),
+                      const SizedBox(
+                        width: 5,
+                      ),
                       Image.asset(
                         "assets/slider/slide.png",
                         width: 216,
