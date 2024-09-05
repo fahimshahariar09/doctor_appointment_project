@@ -1,5 +1,7 @@
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/screen/splash/language_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashStartedScreen extends StatelessWidget {
   const SplashStartedScreen({super.key});
@@ -29,9 +31,11 @@ class SplashStartedScreen extends StatelessWidget {
                 const SizedBox(
                   height: 100,
                 ),
-                CommonButton(buttonName: "GET STARTED", onTap: () {
-                 // Get.to(const LanguageSplashScreen());
-                }),
+                CommonButton(
+                    buttonName: "GET STARTED",
+                    onTap: () {
+                      Get.to(const LanguageSplashScreen());
+                    }),
               ],
             ),
           ),
