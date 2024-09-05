@@ -1,7 +1,9 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
 import 'package:doctor_appointment_project/view/screen/home_page/widget/category_card.dart';
+import 'package:doctor_appointment_project/view/screen/investigation/investigation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -19,11 +21,13 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.notifications_none_outlined,
-                size: 30,
-              ))
+            onPressed: () {},
+            icon: const Icon(
+              Icons.notifications_none_outlined,
+              size: 30,
+            ),
+          ),
+          SizedBox(width: 15,),
         ],
       ),
       body: SafeArea(
@@ -82,7 +86,6 @@ class HomePage extends StatelessWidget {
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                 ),
                 buildSizedBox(height: 20),
-
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Card(
@@ -105,7 +108,9 @@ class HomePage extends StatelessWidget {
                               CategoryCard(
                                   titel: "Invertigation",
                                   imageUrl: AppIcon.invertigation,
-                                  onTap: () {}),
+                                  onTap: () {
+                                    Get.to(Investigation());
+                                  }),
                             ],
                           ),
                           Row(
