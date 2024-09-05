@@ -1,4 +1,5 @@
 
+import 'package:doctor_appointment_project/view/screen/home_page/home_page.dart';
 import 'package:doctor_appointment_project/view/screen/hospital_screen/hospital_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
