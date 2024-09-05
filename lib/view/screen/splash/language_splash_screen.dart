@@ -1,6 +1,8 @@
 
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/screen/home_page/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class LanguageSplashScreen extends StatelessWidget {
   const LanguageSplashScreen({super.key});
@@ -51,7 +53,7 @@ class LanguageSplashScreen extends StatelessWidget {
                     buttonName: "English",
                     textColor: Colors.white,
                     onTap: () {
-                     // Get.to(const HomePage());
+                      Get.to(const HomePage());
                     })
               ],
             ),
