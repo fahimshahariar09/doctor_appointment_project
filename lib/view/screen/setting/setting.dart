@@ -1,9 +1,8 @@
-import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
-import 'package:doctor_appointment_project/view/common_widget/common_card.dart';
+import 'package:doctor_appointment_project/view/screen/setting/widget/common_setting.dart';
 import 'package:flutter/material.dart';
 
-class Investigation extends StatelessWidget {
-  const Investigation({super.key});
+class Setting extends StatelessWidget {
+  const Setting({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,30 +37,37 @@ class Investigation extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    const SizedBox(
+                      height: 10,
+                    ),
                     const Text(
-                      'Investigation',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
+                      "Setting",
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Expanded(
+                      child: ListView(
+                        children: [
+                          CommonSetting(
+                            onTap: () {},
+                            text: 'Language',
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          CommonSetting(
+                            onTap: () {},
+                            text: 'About',
+                          ),
+                        ],
                       ),
                     ),
-                    const SizedBox(height: 10),
-                    const SearchTextField(
-                        hText: "Search Investigation", icon: Icon(Icons.search)),
-                    const SizedBox(height: 10),
-                    Expanded(
-                      child: ListView.builder(
-                        itemCount: 8,
-                        itemBuilder: (context, index) {
-                          return CommonCard(
-                              onTap: () {}, text: 'Complete Blood Count (CBC');
-                        },
-                      ),
-                    )
                   ],
                 ),
               ),
-            ),
+            )
           ],
         ),
       ),

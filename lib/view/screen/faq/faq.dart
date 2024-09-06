@@ -1,9 +1,8 @@
-import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_card.dart';
 import 'package:flutter/material.dart';
 
-class Investigation extends StatelessWidget {
-  const Investigation({super.key});
+class Faq extends StatelessWidget {
+  const Faq({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,25 +37,25 @@ class Investigation extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text(
-                      'Investigation',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
+                    const SizedBox(
+                      height: 10,
                     ),
-                    const SizedBox(height: 10),
-                    const SearchTextField(
-                        hText: "Search Investigation", icon: Icon(Icons.search)),
-                    const SizedBox(height: 10),
+                    const Text(
+                      "FAQ",
+                      style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
                     Expanded(
                       child: ListView.builder(
-                        itemCount: 8,
-                        itemBuilder: (context, index) {
-                          return CommonCard(
-                              onTap: () {}, text: 'Complete Blood Count (CBC');
-                        },
-                      ),
+                          itemCount: 3,
+                          itemBuilder: (context, index) {
+                        return CommonCard(
+                          onTap: () {},
+                          text: 'How to Bank a Doctor ?',
+                        );
+                      }),
                     )
                   ],
                 ),

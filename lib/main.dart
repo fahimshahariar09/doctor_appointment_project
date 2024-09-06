@@ -1,7 +1,5 @@
 
-import 'package:doctor_appointment_project/view/screen/home_page/home_page.dart';
-import 'package:doctor_appointment_project/view/screen/hospital_screen/hospital_list.dart';
-import 'package:doctor_appointment_project/view/screen/investigation/investigation.dart';
+import 'package:doctor_appointment_project/view/screen/support/support.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: Support(),
     );
   }
 }

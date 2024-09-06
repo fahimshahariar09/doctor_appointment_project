@@ -1,8 +1,8 @@
 
 
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
-import 'package:doctor_appointment_project/view/screen/category/category_screen.dart';
-import 'package:doctor_appointment_project/view/screen/home_page/home_page.dart';
+import 'package:doctor_appointment_project/view/screen/category_screen/category_screen.dart';
+import 'package:doctor_appointment_project/view/screen/home_screen/home_screen.dart';
 import 'package:doctor_appointment_project/view/screen/search/search_screen.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +23,7 @@ class BottomNaviBarController extends GetxController{
   RxList<Widget> bottomBarPage = [
     const CategoryScreen(),
     const SearchScreen(),
-    const HomePage(),
+    const HomeScreen(),
   ].obs;
 
 }

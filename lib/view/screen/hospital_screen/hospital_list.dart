@@ -6,24 +6,7 @@ class HospitalList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Image.asset(
-          "assets/icon/Medico.png",
-          width: 114,
-          height: 32,
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.notifications_none_outlined,
-              size: 30,
-            ),
-          ),
-        ],
-      ),
+    return const Scaffold(
       body: SafeArea(
         child: Column(
           children: [
@@ -47,3 +30,24 @@ class HospitalList extends StatelessWidget {
     );
   }
 }
+
+// AppBar(
+// title: Image.asset(
+// "assets/icon/Medico.png",
+// width: 114,
+// height: 32,
+// ),
+// centerTitle: true,
+// actions: [
+// IconButton(
+// onPressed: () {},
+// icon: const Icon(
+// Icons.notifications_none_outlined,
+// size: 30,
+// ),
+// ),
+// SizedBox(
+// width: 10,
+// ),
+// ],
+// ),

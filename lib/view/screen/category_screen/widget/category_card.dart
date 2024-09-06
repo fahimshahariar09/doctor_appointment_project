@@ -28,12 +28,12 @@ class CategoryCard extends StatelessWidget {
               width: 60,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 2,
           ),
           Text(
             titel,
-            style: TextStyle(fontSize: 15),
+            style: const TextStyle(fontSize: 15),
           ),
         ],
       ),

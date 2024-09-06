@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
-class InvestigationCard extends StatelessWidget {
-  const InvestigationCard({super.key, required this.onTap, required this.text});
+class CommonCard extends StatelessWidget {
+  const CommonCard({
+    super.key,
+    required this.onTap,
+    required this.text, this.icon,
+  });
 
   final VoidCallback onTap;
   final String text;
+  final Icon? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +24,11 @@ class InvestigationCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding:   const EdgeInsets.all(8.0),
             child: Row(
               children: [
-                Icon(Icons.arrow_forward_ios_rounded),
-                SizedBox(
+               icon ??  const Icon(Icons.arrow_forward_ios_rounded),
+                const SizedBox(
                   width: 15,
                 ),
                 Text(

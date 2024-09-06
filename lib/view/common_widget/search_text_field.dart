@@ -4,11 +4,11 @@ class SearchTextField extends StatelessWidget {
   const SearchTextField({
     super.key,
     required this.hText,
-    required this.icon,
+     this.icon,
   });
 
   final String hText;
-  final Icon icon;
+  final Icon? icon;
 
 
   @override
@@ -38,7 +38,7 @@ class SearchTextField extends StatelessWidget {
               color: Colors.blue,
             ),
             child: icon ??
-                Icon(
+                const Icon(
                   Icons.search,
                   color: Colors.white,
                 ),
