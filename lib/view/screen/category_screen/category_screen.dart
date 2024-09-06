@@ -21,9 +21,9 @@ class CategoryScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-             AppBar(
-               backgroundColor: Colors.blue.shade50,
-               title: Image.asset(
+            AppBar(
+              backgroundColor: Colors.blue.shade50,
+              title: Image.asset(
                 "assets/icon/Medico.png",
                 width: 114,
                 height: 32,
@@ -37,7 +37,9 @@ class CategoryScreen extends StatelessWidget {
                     size: 30,
                   ),
                 ),
-                const SizedBox(width: 10,),
+                const SizedBox(
+                  width: 10,
+                ),
               ],
             ),
             Expanded(
@@ -94,7 +96,8 @@ class CategoryScreen extends StatelessWidget {
                       buildSizedBox(height: 20),
                       const Text(
                         "Category",
-                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w600),
                       ),
                       buildSizedBox(height: 20),
                       Padding(
@@ -106,7 +109,8 @@ class CategoryScreen extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     CategoryCard(
                                         titel: "Hospital",
@@ -129,7 +133,8 @@ class CategoryScreen extends StatelessWidget {
                                   ],
                                 ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     CategoryCard(
                                         titel: "Doctor Report",
@@ -144,11 +149,89 @@ class CategoryScreen extends StatelessWidget {
                                     CategoryCard(
                                         titel: "Invite",
                                         imageUrl: AppIcon.invite,
-                                        onTap: () {}),
+                                        onTap: () {
+                                          Get.dialog(
+                                            barrierDismissible: true,
+                                            Dialog(
+                                              backgroundColor:
+                                                  Colors.transparent,
+                                              child: Container(
+                                                padding:
+                                                    const EdgeInsets.all(10),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius:
+                                                      BorderRadius.circular(20),
+                                                ),
+                                                child: Padding(
+                                                  padding: const EdgeInsets
+                                                      .symmetric(
+                                                      horizontal: 10,
+                                                      vertical: 8),
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.min,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      const Text(
+                                                        "Send Invitation",
+                                                        style: TextStyle(
+                                                            fontSize: 25,
+                                                            fontWeight:
+                                                                FontWeight.w500,
+                                                            color:
+                                                                Colors.black),
+                                                      ),
+                                                      const SizedBox(
+                                                        height: 2,
+                                                      ),
+                                                      InkWell(
+                                                        onTap: () {
+                                                          Get.back();
+                                                        },
+                                                        child: const Text(
+                                                          "Invite By SMS",
+                                                          style: TextStyle(
+                                                              fontSize: 15,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              color:
+                                                                  Colors.black),
+                                                        ),
+                                                      ),
+                                                      const SizedBox(
+                                                        height: 2,
+                                                      ),
+                                                      InkWell(
+                                                        onTap: () {
+                                                          Get.back();
+                                                        },
+                                                        child: const Text(
+                                                          "Share",
+                                                          style: TextStyle(
+                                                              fontSize: 15,
+                                                              fontWeight:
+                                                                  FontWeight
+                                                                      .w500,
+                                                              color:
+                                                                  Colors.black),
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                          );
+                                        }),
                                   ],
                                 ),
                                 Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     CategoryCard(
                                         titel: "FAQ",
