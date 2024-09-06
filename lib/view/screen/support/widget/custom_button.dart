@@ -19,28 +19,27 @@ class CustomButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-            shape: BeveledRectangleBorder(
-          borderRadius: BorderRadius.circular(5),
+          backgroundColor: Colors.blue,
+            shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
         )),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Image.asset(
-              imageUrl,
-              height: 30,
-            ),
-            SizedBox(
-              width: 20,
-            ),
-            Text(
-              text,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: TextStyle(
-                color: Colors.white,
-              ),
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(top: 13,bottom: 13),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Image.asset(imageUrl, height: 50),
+              SizedBox(width: 5),
+              Text(
+                text,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

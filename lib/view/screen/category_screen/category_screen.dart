@@ -5,6 +5,7 @@ import 'package:doctor_appointment_project/view/screen/doctor_report/doctor_repo
 import 'package:doctor_appointment_project/view/screen/faq/faq.dart';
 import 'package:doctor_appointment_project/view/screen/investigation/investigation.dart';
 import 'package:doctor_appointment_project/view/screen/setting/setting.dart';
+import 'package:doctor_appointment_project/view/screen/support/support.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -128,7 +129,7 @@ class CategoryScreen extends StatelessWidget {
                                         titel: "Doctor Report",
                                         imageUrl: AppIcon.doctorreport,
                                         onTap: () {
-                                          Get.to(DoctorReport());
+                                          Get.to(const DoctorReport());
                                         }),
                                     CategoryCard(
                                         titel: "Department",
@@ -152,7 +153,9 @@ class CategoryScreen extends StatelessWidget {
                                     CategoryCard(
                                         titel: "Support",
                                         imageUrl: AppIcon.support,
-                                        onTap: () {}),
+                                        onTap: () {
+                                          Get.to(const Support());
+                                        }),
                                     CategoryCard(
                                         titel: "Setting",
                                         imageUrl: AppIcon.setting,
