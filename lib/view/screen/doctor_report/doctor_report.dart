@@ -6,6 +6,7 @@ class DoctorReport extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue.shade50,
       body: SafeArea(
         child: Column(
           children: [

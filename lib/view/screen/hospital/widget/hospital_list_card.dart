@@ -37,60 +37,60 @@ class HospitalListCard extends StatelessWidget {
                 child: Image.asset(imageUrl),
               ),
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   hospitalName,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w400,
                     fontSize: 15,
                   ),
                 ),
-                SizedBox(height: 2),
+                const SizedBox(height: 2),
                 Row(
                   children: [
-                    Text(
+                    const Text(
                       "Category: ",
                       style: TextStyle(fontSize: 13, color: Colors.black),
                     ),
                     Text(
                       category,
-                      style: TextStyle(fontSize: 14),
+                      style: const TextStyle(fontSize: 14),
                     )
                   ],
                 ),
-                SizedBox(height: 2),
+                const SizedBox(height: 2),
                 Row(
                   children: [
                     Row(
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.location_on,
                           color: Colors.black,
                           size: 18,
                         ),
-                        SizedBox(width: 5),
+                        const SizedBox(width: 5),
                         Text(
                           location,
-                          style: TextStyle(fontSize: 12),
+                          style: const TextStyle(fontSize: 12),
                         )
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 30,
                     ),
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           "Code: ",
                           style: TextStyle(fontSize: 12),
                         ),
                         Text(
                           code,
-                          style: TextStyle(fontSize: 12),
+                          style: const TextStyle(fontSize: 12),
                         )
                       ],
                     ),

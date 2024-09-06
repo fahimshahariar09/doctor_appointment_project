@@ -1,6 +1,4 @@
-import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_list.dart';
-import 'package:doctor_appointment_project/view/screen/doctor_list/widget/doctor_list_card.dart';
-import 'package:doctor_appointment_project/view/screen/support/support.dart';
+import 'package:doctor_appointment_project/view/screen/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DoctorList(),
+      home: SplashScreen(),
     );
   }
 }

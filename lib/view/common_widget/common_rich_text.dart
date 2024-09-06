@@ -9,7 +9,7 @@ class CommonRichText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RichText(text: TextSpan(
+    return RichText(text: const TextSpan(
       children: [
         TextSpan(
           text: "",style: TextStyle(

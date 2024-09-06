@@ -29,12 +29,12 @@ class CustomButton extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Image.asset(imageUrl, height: 50),
-              SizedBox(width: 5),
+              const SizedBox(width: 5),
               Text(
                 text,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                 ),
               )

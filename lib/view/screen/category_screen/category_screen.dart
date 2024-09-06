@@ -1,8 +1,10 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
 import 'package:doctor_appointment_project/view/screen/category_screen/widget/category_card.dart';
+import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_list.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_report/doctor_report.dart';
 import 'package:doctor_appointment_project/view/screen/faq/faq.dart';
+import 'package:doctor_appointment_project/view/screen/hospital/hospital_list.dart';
 import 'package:doctor_appointment_project/view/screen/investigation/investigation.dart';
 import 'package:doctor_appointment_project/view/screen/setting/setting.dart';
 import 'package:doctor_appointment_project/view/screen/support/support.dart';
@@ -109,11 +111,15 @@ class CategoryScreen extends StatelessWidget {
                                     CategoryCard(
                                         titel: "Hospital",
                                         imageUrl: AppIcon.hospital,
-                                        onTap: () {}),
+                                        onTap: () {
+                                          Get.to(const HospitalList());
+                                        }),
                                     CategoryCard(
                                         titel: "Doctor",
                                         imageUrl: AppIcon.doctor,
-                                        onTap: () {}),
+                                        onTap: () {
+                                          Get.to(const DoctorList());
+                                        }),
                                     CategoryCard(
                                         titel: "Invertigation",
                                         imageUrl: AppIcon.invertigation,

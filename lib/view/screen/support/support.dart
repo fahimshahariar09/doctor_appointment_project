@@ -16,7 +16,7 @@ class Support extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
@@ -28,14 +28,14 @@ class Support extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Image.asset(AppImages.support, height: 250, width: 250),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                Text(
+                const Text(
                   'How May we Help you \n Today',
                   style: TextStyle(
                     fontSize: 25,
@@ -44,10 +44,10 @@ class Support extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
                 CustomButton(onPressed: (){}, text: "Share in the Facebook group", imageUrl: AppIcon.facebook,),
-                SizedBox(height: 15,),
+                const SizedBox(height: 15,),
                 CustomButton(onPressed: (){}, text: "Feedback & Suggesition", imageUrl: AppIcon.person,),
 
-                SizedBox(height: 100,),
+                const SizedBox(height: 100,),
                 Container(
                   height: 110,
                   width: MediaQuery.sizeOf(context).width,
@@ -60,19 +60,19 @@ class Support extends StatelessWidget {
                         Column(
                           children: [
                             Image.asset(AppIcon.messenger),
-                            Text("Messenger")
+                            const Text("Messenger")
                           ],
                         ),
                         Column(
                           children: [
                             Image.asset(AppIcon.email),
-                            Text("Email")
+                            const Text("Email")
                           ],
                         ),
                         Column(
                           children: [
                             Image.asset(AppIcon.call),
-                            Text("Call")
+                            const Text("Call")
                           ],
                         )
                       ],
