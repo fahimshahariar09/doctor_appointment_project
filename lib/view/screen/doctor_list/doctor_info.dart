@@ -1,6 +1,8 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/screen/appointment_info/doctor_book_appoin.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DoctorInfo extends StatelessWidget {
   const DoctorInfo({super.key});
@@ -79,7 +81,9 @@ class DoctorInfo extends StatelessWidget {
                       CommonButton(
                           buttonName: "Booking Now",
                           textColor: Colors.white,
-                          onTap: () {}),
+                          onTap: () {
+                            Get.to(DoctorBookAppoin());
+                          }),
                       const SizedBox(height: 5),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

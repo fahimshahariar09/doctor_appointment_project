@@ -1,5 +1,7 @@
+import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_rich_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AppointmentInfo extends StatelessWidget {
   const AppointmentInfo({super.key});
@@ -49,8 +51,8 @@ class AppointmentInfo extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 5),
-                      Row(
+                      const SizedBox(height: 5),
+                      const Row(
                         children: [
                           Icon(Icons.arrow_back),
                           SizedBox(width: 5),
@@ -61,12 +63,12 @@ class AppointmentInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 15),
-                      CommonRichText(
+                      const SizedBox(height: 15),
+                      const CommonRichText(
                           name: "Doctor Name: ",
                           titel: "Assoc. Prof. Dr. Khandker Parvez Ahamed"),
-                      SizedBox(height: 15),
-                      Row(
+                      const SizedBox(height: 15),
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
@@ -76,34 +78,55 @@ class AppointmentInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      CommonRichText(
-                          name: "Patient Name*: ",
-                          titel: "Amirul Islam Amir"),
-                      SizedBox(height: 10),
-                      CommonRichText(
+                      const SizedBox(height: 10),
+                      const CommonRichText(
+                          name: "Patient Name*: ", titel: "Amirul Islam Amir"),
+                      const SizedBox(height: 10),
+                      const CommonRichText(
                           name: "Patient Mobile Number*: ",
                           titel: "01565842524"),
-                      SizedBox(height: 10),
-                      CommonRichText(
-                          name: "Type*: ",
-                          titel: "New"),
-                      SizedBox(height: 10),
-                      CommonRichText(
-                          name: "Gender*: ",
-                          titel: "Male"),
-                      SizedBox(height: 10),
-                      Text("Chamber:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
-                      SizedBox(height: 10),
-                      Text("Delta Hospital Mymensingh",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 15),),
-                      SizedBox(height: 15),
-                      CommonRichText(
-                          name: "4:00 PM ",
-                          titel: "(Thu-Fri)"),
-                      SizedBox(height: 15),
-                      CommonRichText(
+                      const SizedBox(height: 10),
+                      const CommonRichText(name: "Type*: ", titel: "New"),
+                      const SizedBox(height: 10),
+                      const CommonRichText(name: "Gender*: ", titel: "Male"),
+                      const SizedBox(height: 10),
+                      const Text(
+                        "Chamber:",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 15),
+                      ),
+                      const SizedBox(height: 10),
+                      const Text(
+                        "Delta Hospital Mymensingh",
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600, fontSize: 15),
+                      ),
+                      const SizedBox(height: 15),
+                      const CommonRichText(name: "4:00 PM ", titel: "(Thu-Fri)"),
+                      const SizedBox(height: 20),
+                      const CommonRichText(
                           name: "Address: ",
-                          titel: "55/5, Medical Collage Gate, Charpara, Mymensingh"),
+                          titel:
+                              "55/5, Medical Collage Gate, Charpara, Mymensingh"),
+                      const SizedBox(height: 20),
+                      const CommonRichText(
+                          name: "Contact: ",
+                          titel: "+0880185475222, +08801548756921"),
+                      const SizedBox(height: 20),
+                      const CommonRichText(name: "Doctor Fee: ", titel: "1800 Tk"),
+                      const SizedBox(height: 20),
+                      CommonButton(
+                          buttonName: "Payment For Booking",
+                          onTap: () {
+                            Get.snackbar("title", "add success");
+                          }),
+                      const SizedBox(height: 10),
+                      CommonButton(
+                          buttonName: "Pay Later",
+                          buttonColor: Colors.grey,
+                          onTap: () {
+                            Get.snackbar("title", "add failed");
+                          })
                     ],
                   ),
                 ),

@@ -26,12 +26,12 @@ class CommonRichText extends StatelessWidget {
           text: name,
           style: TextStyle(
               color: nColor ?? Colors.black,
-              fontWeight: nWeight ?? FontWeight.w500)),
+              fontWeight: nWeight ?? FontWeight.w500,fontSize: 15,)),
       TextSpan(
           text: titel,
           style: TextStyle(
               color: tColor ?? Colors.black54,
-              fontWeight: tWeight ?? FontWeight.w400))
+              fontWeight: tWeight ?? FontWeight.w400,fontSize: 15))
     ]));
   }
 }

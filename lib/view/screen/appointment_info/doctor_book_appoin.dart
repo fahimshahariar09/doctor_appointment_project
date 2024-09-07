@@ -1,6 +1,8 @@
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/screen/appointment_info/appointment_info.dart';
 import 'package:doctor_appointment_project/view/screen/appointment_info/widget/common_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DoctorBookAppoin extends StatelessWidget {
   const DoctorBookAppoin({super.key});
@@ -37,7 +39,13 @@ class DoctorBookAppoin extends StatelessWidget {
                         color: Colors.grey,
                       ),
                       child: const Center(
-                        child: Text("Assoc. Prof. Dr. Khandker Parvez Ahamed",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,),),
+                        child: Text(
+                          "Assoc. Prof. Dr. Khandker Parvez Ahamed",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -45,13 +53,26 @@ class DoctorBookAppoin extends StatelessWidget {
                     const SizedBox(height: 5),
                     const CommonTextField(hText: "Patient Mobile Number*"),
                     const SizedBox(height: 5),
-                    const CommonTextField(hText: "Type*",icon: Icon(Icons.arrow_drop_down),),
+                    const CommonTextField(
+                      hText: "Type*",
+                      icon: Icon(Icons.arrow_drop_down),
+                    ),
                     const SizedBox(height: 5),
-                    const CommonTextField(hText: "Gender*",icon: Icon(Icons.arrow_drop_down),),
+                    const CommonTextField(
+                      hText: "Gender*",
+                      icon: Icon(Icons.arrow_drop_down),
+                    ),
                     const SizedBox(height: 5),
-                    const CommonTextField(hText: "Choose Avaliable Date*",icon: Icon(Icons.arrow_drop_down),),
+                    const CommonTextField(
+                      hText: "Choose Avaliable Date*",
+                      icon: Icon(Icons.arrow_drop_down),
+                    ),
                     const SizedBox(height: 5),
-                    CommonButton(buttonName: "Book Appointment", onTap: (){})
+                    CommonButton(
+                        buttonName: "Book Appointment",
+                        onTap: () {
+                          Get.to(const AppointmentInfo());
+                        })
                   ],
                 ),
               ),
