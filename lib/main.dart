@@ -1,4 +1,4 @@
-import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_book_appoin.dart';
+import 'package:doctor_appointment_project/view/screen/appointment_info/doctor_book_appoin.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_info.dart';
 import 'package:doctor_appointment_project/view/screen/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
