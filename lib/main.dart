@@ -1,4 +1,4 @@
-import 'package:doctor_appointment_project/view/screen/department/department.dart';
+import 'package:doctor_appointment_project/view/screen/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -11,9 +11,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  GetMaterialApp(
+    return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Department(),
+      home: SplashScreen(),
     );
   }
 }

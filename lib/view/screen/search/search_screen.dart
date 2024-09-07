@@ -1,7 +1,9 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
+import 'package:doctor_appointment_project/view/screen/branch_info/branch_info.dart';
 import 'package:doctor_appointment_project/view/screen/hospital/widget/hospital_list_card.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -76,7 +78,9 @@ class SearchScreen extends StatelessWidget {
                         category: 'Specialzed Hospital',
                         location: 'Mymensingh',
                         code: '10000399',
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(const BranchInfo());
+                        },
                       ),
                       const SizedBox(height: 5),
                       HospitalListCard(

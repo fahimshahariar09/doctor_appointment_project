@@ -31,9 +31,9 @@ class HospitalInfo extends StatelessWidget {
                 const SizedBox(width: 10),
               ],
             ),
-            SizedBox(height: 5),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+            const SizedBox(height: 5),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 15),
               child: Row(
                 children: [
                   Icon(Icons.arrow_back),
@@ -52,16 +52,16 @@ class HospitalInfo extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Column(
                     children: [
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Image.asset(AppIcon.delta,
                           height: 150, width: 150, fit: BoxFit.cover),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: [
-                              Text(
+                              const Text(
                                 "Type: ",
                                 style: TextStyle(fontWeight: FontWeight.w300),
                               ),
@@ -80,7 +80,7 @@ class HospitalInfo extends StatelessWidget {
                               )
                             ],
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Text(
                                 "Experience: ",
@@ -98,8 +98,8 @@ class HospitalInfo extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Row(
+                      const SizedBox(height: 10),
+                      const Row(
                         children: [
                           Text(
                             "Total Branch: ",
@@ -110,8 +110,8 @@ class HospitalInfo extends StatelessWidget {
                           Text("4"),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Row(
+                      const SizedBox(height: 10),
+                      const Row(
                         children: [
                           Text(
                             "Code Number : ",
@@ -122,8 +122,8 @@ class HospitalInfo extends StatelessWidget {
                           Text("M37103"),
                         ],
                       ),
-                      SizedBox(height: 15),
-                      Row(
+                      const SizedBox(height: 15),
+                      const Row(
                         children: [
                           Text(
                             "About",
@@ -132,16 +132,16 @@ class HospitalInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 15),
-                      Text(
+                      const SizedBox(height: 15),
+                      const Text(
                         "stroke,headache,vertigo,tinitus,tremor, low back pain,neck pain,facial daviation,hand and feet weakness, numbness,tingiling sensation,all kind of nerve and spine problem, paekinson disesases, epilepsy,momory problem,migraine, sinusitis and diabetes,miltiple joint pain,numbness and tingiling ensation boyh upper and lower limb,PHD, i had traning from Royal infarmary Hospital, Edinburgh, London.post-graduation research fellowship in Rome University, Hospital Italy, and had traning from Germany, One year postgraduate traning from Dhaka medical Collage and hospital",
                         style: TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
                         ),
                       ),
-                      SizedBox(height: 20),
-                      Row(
+                      const SizedBox(height: 20),
+                      const Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -163,8 +163,8 @@ class HospitalInfo extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: 15),
-                      Row(
+                      const SizedBox(height: 15),
+                      const Row(
                         children: [
                           Text(
                             "Branch List",
@@ -175,16 +175,16 @@ class HospitalInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       ListView.builder(
                           itemCount: 5,
                           shrinkWrap: true,
-                          physics: NeverScrollableScrollPhysics(),
+                          physics: const NeverScrollableScrollPhysics(),
                           itemBuilder: (context, index) {
                             return CommonCard(
                               onTap: () {},
                               text: "Delta Health Care, Mirpur Ltd",
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.arrow_forward_ios_rounded,
                               ),
                             );

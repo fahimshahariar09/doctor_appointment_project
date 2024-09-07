@@ -40,7 +40,7 @@ class DoctorInfo extends StatelessWidget {
                 SizedBox(width: 5),
                 Text(
                   "Doctor Info",
-                  style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500),
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
                 ),
               ],
             ),
@@ -82,7 +82,7 @@ class DoctorInfo extends StatelessWidget {
                           buttonName: "Booking Now",
                           textColor: Colors.white,
                           onTap: () {
-                            Get.to(DoctorBookAppoin());
+                            Get.to(const DoctorBookAppoin());
                           }),
                       const SizedBox(height: 5),
                       Row(
@@ -166,6 +166,7 @@ class DoctorInfo extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.only(left: 20),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 Row(
                                   children: [
@@ -181,9 +182,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Fri"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -191,9 +190,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Sat"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -201,9 +198,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Sun"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -211,9 +206,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Mon"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -252,9 +245,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Fri"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -262,9 +253,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Sat"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -272,9 +261,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Sun"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -282,9 +269,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Mon"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -323,9 +308,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Fri"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -333,9 +316,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Sat"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),
@@ -343,9 +324,7 @@ class DoctorInfo extends StatelessWidget {
                                 Row(
                                   children: [
                                     Text("Sun"),
-                                    SizedBox(
-                                      width: 10,
-                                    ),
+                                    SizedBox(width: 5),
                                     Text("6: 30PM - 8: 50PM"),
                                   ],
                                 ),

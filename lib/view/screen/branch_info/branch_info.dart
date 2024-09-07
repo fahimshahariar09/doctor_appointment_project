@@ -33,8 +33,8 @@ class BranchInfo extends StatelessWidget {
                 const SizedBox(width: 10),
               ],
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 10),
               child: Row(
                 children: [
                   Icon(Icons.arrow_back),
@@ -54,15 +54,15 @@ class BranchInfo extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Column(
                     children: [
-                      SizedBox(height: 20),
+                      const SizedBox(height: 20),
                       Image.asset(
                         AppIcon.delta,
                         height: 120,
                         width: 120,
                         fit: BoxFit.fill,
                       ),
-                      SizedBox(height: 20),
-                      Row(
+                      const SizedBox(height: 20),
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(Icons.location_on),
@@ -70,12 +70,12 @@ class BranchInfo extends StatelessWidget {
                           Icon(Icons.arrow_drop_down),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Text("Delta Health Care, Mymensingh Ltd"),
-                      SizedBox(height: 10),
-                      BranchInfoCard(),
-                      SizedBox(height: 10),
-                      Row(
+                      const SizedBox(height: 10),
+                      const Text("Delta Health Care, Mymensingh Ltd"),
+                      const SizedBox(height: 10),
+                      const BranchInfoCard(),
+                      const SizedBox(height: 10),
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Text(
@@ -95,7 +95,7 @@ class BranchInfo extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       DoctorListCard(
                           imageurl: AppIcon.dlist1,
                           name: "Assoc. Prof. Dr. Khandker\nParvez Ahamed",
@@ -105,10 +105,10 @@ class BranchInfo extends StatelessWidget {
                           bmbcNum: "M37103",
                           expreience: "17+ Years",
                           onTap: () {
-                            Get.to(DoctorInfo());
+                            Get.to(const DoctorInfo());
                           },
                           text: "Specialties"),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       DoctorListCard(
                         imageurl: AppIcon.doctor,
                         name: "Dr Jhanara Munni",
@@ -120,7 +120,7 @@ class BranchInfo extends StatelessWidget {
                         onTap: () {},
                         text: "Specialties",
                       ),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       DoctorListCard(
                         imageurl: AppIcon.dlist,
                         name: "Dr Mohammad Harun Ur\nRashid",

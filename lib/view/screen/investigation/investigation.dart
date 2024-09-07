@@ -54,7 +54,7 @@ class Investigation extends StatelessWidget {
                         itemCount: 8,
                         itemBuilder: (context, index) {
                           return CommonCard(
-                              onTap: () {}, text: 'Complete Blood Count (CBC');
+                              onTap: () {}, text: 'Complete Blood Count (CBC)');
                         },
                       ),
                     )

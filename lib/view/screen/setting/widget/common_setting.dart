@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+
 class CommonSetting extends StatelessWidget {
   const CommonSetting({super.key, required this.onTap, required this.text});
-
 
   final VoidCallback onTap;
   final String text;
@@ -20,7 +20,13 @@ class CommonSetting extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(text,style: const TextStyle(fontSize: 18,fontWeight: FontWeight.w500),),
+                Text(
+                  text,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
               ],
             ),
           ),
