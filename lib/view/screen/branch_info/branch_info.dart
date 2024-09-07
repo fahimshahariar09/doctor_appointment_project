@@ -1,6 +1,10 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/screen/branch_info/widget/branch_info_card.dart';
+import 'package:doctor_appointment_project/view/screen/branch_info/widget/doctor_list_card.dart';
+import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_info.dart';
+import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_list.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class BranchInfo extends StatelessWidget {
   const BranchInfo({super.key});
@@ -35,7 +39,12 @@ class BranchInfo extends StatelessWidget {
               child: Row(
                 children: [
                   Icon(Icons.arrow_back),
-                  Text("Branch Info",style: TextStyle(fontWeight: FontWeight.w600,),)
+                  Text(
+                    "Branch Info",
+                    style: TextStyle(
+                      fontWeight: FontWeight.w600,
+                    ),
+                  )
                 ],
               ),
             ),
@@ -46,9 +55,14 @@ class BranchInfo extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Column(
                     children: [
-                      SizedBox(height:20),
-                      Image.asset(AppIcon.delta,height: 120,width: 120,fit: BoxFit.fill,),
-                     SizedBox(height:20),
+                      SizedBox(height: 20),
+                      Image.asset(
+                        AppIcon.delta,
+                        height: 120,
+                        width: 120,
+                        fit: BoxFit.fill,
+                      ),
+                      SizedBox(height: 20),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -60,7 +74,65 @@ class BranchInfo extends StatelessWidget {
                       SizedBox(height: 10),
                       Text("Delta Health Care, Mymensingh Ltd"),
                       SizedBox(height: 10),
-                      BranchInfoCard()
+                      BranchInfoCard(),
+                      SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "Doctor List",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              fontSize: 15,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Icon(Icons.account_tree_outlined),
+                              SizedBox(width: 3),
+                              Text("All"),
+                              Icon(Icons.arrow_drop_down),
+                            ],
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      DoctorListCard(
+                          imageurl: AppIcon.dlist1,
+                          name: "Assoc. Prof. Dr. Khandker\nParvez Ahamed",
+                          titel:
+                              "MBBS, phd(Neurolog) (ITALY),\nMsc(Enocrinology) (UK)",
+                          working: "Victoria Healthcare",
+                          bmbcNum: "M37103",
+                          expreience: "17+ Years",
+                          onTap: () {
+                            Get.to(DoctorInfo());
+                          },
+                          text: "Specialties"),
+                      SizedBox(height: 10,),
+                      DoctorListCard(
+                        imageurl: AppIcon.doctor,
+                        name: "Dr Jhanara Munni",
+                        titel:
+                        "MBBS, Ms",
+                        working: "Associate Professor & \nHead Neurosurgery",
+                        bmbcNum: "M37103",
+                        expreience: "17+ Years",
+                        onTap: () {},
+                        text: "Specialties",
+                      ),
+                      SizedBox(height: 10,),
+                      DoctorListCard(
+                        imageurl: AppIcon.dlist,
+                        name: "Dr Mohammad Harun Ur\nRashid",
+                        titel:
+                        "MBBS, Ms",
+                        working: "Associate Professor & \nHead Neurosurgery",
+                        bmbcNum: "M37103",
+                        expreience: "17+ Years",
+                        onTap: () {},
+                        text: "Specialties",
+                      ),
                     ],
                   ),
                 ),
