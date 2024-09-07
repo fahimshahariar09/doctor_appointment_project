@@ -88,6 +88,22 @@ class AppointmentInfo extends StatelessWidget {
                       CommonRichText(
                           name: "Type*: ",
                           titel: "New"),
+                      SizedBox(height: 10),
+                      CommonRichText(
+                          name: "Gender*: ",
+                          titel: "Male"),
+                      SizedBox(height: 10),
+                      Text("Chamber:",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+                      SizedBox(height: 10),
+                      Text("Delta Hospital Mymensingh",style: TextStyle(fontWeight: FontWeight.w600,fontSize: 15),),
+                      SizedBox(height: 15),
+                      CommonRichText(
+                          name: "4:00 PM ",
+                          titel: "(Thu-Fri)"),
+                      SizedBox(height: 15),
+                      CommonRichText(
+                          name: "Address: ",
+                          titel: "55/5, Medical Collage Gate, Charpara, Mymensingh"),
                     ],
                   ),
                 ),
