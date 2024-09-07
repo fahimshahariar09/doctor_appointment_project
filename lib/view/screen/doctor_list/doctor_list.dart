@@ -1,7 +1,9 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
+import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_info.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/widget/doctor_list_card.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class DoctorList extends StatelessWidget {
   const DoctorList({super.key});
@@ -69,7 +71,7 @@ class DoctorList extends StatelessWidget {
                       SizedBox(
                         width: 3,
                       ),
-                      Text("Neurologis"),
+                      Text("Neurologist"),
                       Icon(
                         Icons.arrow_drop_down,
                         color: Colors.black,
@@ -96,7 +98,9 @@ class DoctorList extends StatelessWidget {
                         working: "Victoria Healthcare",
                         bmbcNum: "M37103",
                         expreience: "17+ Years",
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(const DoctorInfo());
+                        },
                         text: "Specialties",
                       ),
                       const SizedBox(height: 5,),

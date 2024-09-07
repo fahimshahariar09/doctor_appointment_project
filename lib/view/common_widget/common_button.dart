@@ -32,6 +32,7 @@ class CommonButton extends StatelessWidget {
             child: CommonText(
               titel: buttonName,
               fColor: textColor ?? Colors.black,
+              fSize: 16,
             ),
           ),
         ),

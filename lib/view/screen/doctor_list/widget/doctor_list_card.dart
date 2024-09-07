@@ -24,6 +24,7 @@ class DoctorListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: onTap,
       child: Card(
         elevation: 4,
         child: SizedBox(
