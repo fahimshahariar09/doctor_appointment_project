@@ -1,6 +1,7 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
 import 'package:doctor_appointment_project/view/screen/category_screen/widget/category_card.dart';
+import 'package:doctor_appointment_project/view/screen/department/department.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_list.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_report/doctor_report.dart';
 import 'package:doctor_appointment_project/view/screen/faq/faq.dart';
@@ -145,7 +146,9 @@ class CategoryScreen extends StatelessWidget {
                                     CategoryCard(
                                         titel: "Department",
                                         imageUrl: AppIcon.department,
-                                        onTap: () {}),
+                                        onTap: () {
+                                          Get.to(const Department());
+                                        }),
                                     CategoryCard(
                                         titel: "Invite",
                                         imageUrl: AppIcon.invite,
