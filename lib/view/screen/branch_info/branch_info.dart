@@ -2,7 +2,6 @@ import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/screen/branch_info/widget/branch_info_card.dart';
 import 'package:doctor_appointment_project/view/screen/branch_info/widget/doctor_list_card.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_info.dart';
-import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
