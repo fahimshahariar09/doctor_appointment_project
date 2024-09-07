@@ -21,14 +21,14 @@ class DoctorBookAppoin extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Book Appointment",
                       style: TextStyle(
                         fontWeight: FontWeight.w500,
                         fontSize: 15,
                       ),
                     ),
-                    SizedBox(height: 5),
+                    const SizedBox(height: 5),
                     Container(
                       height: 50,
                       width: MediaQuery.sizeOf(context).width,
@@ -36,21 +36,21 @@ class DoctorBookAppoin extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.grey,
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Text("Assoc. Prof. Dr. Khandker Parvez Ahamed",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,),),
                       ),
                     ),
-                    SizedBox(height: 8),
-                    CommonTextField(hText: "Patient Name*"),
-                    SizedBox(height: 5),
-                    CommonTextField(hText: "Patient Mobile Number*"),
-                    SizedBox(height: 5),
-                    CommonTextField(hText: "Type*",icon: Icon(Icons.arrow_drop_down),),
-                    SizedBox(height: 5),
-                    CommonTextField(hText: "Gender*",icon: Icon(Icons.arrow_drop_down),),
-                    SizedBox(height: 5),
-                    CommonTextField(hText: "Choose Avaliable Date*",icon: Icon(Icons.arrow_drop_down),),
-                    SizedBox(height: 5),
+                    const SizedBox(height: 8),
+                    const CommonTextField(hText: "Patient Name*"),
+                    const SizedBox(height: 5),
+                    const CommonTextField(hText: "Patient Mobile Number*"),
+                    const SizedBox(height: 5),
+                    const CommonTextField(hText: "Type*",icon: Icon(Icons.arrow_drop_down),),
+                    const SizedBox(height: 5),
+                    const CommonTextField(hText: "Gender*",icon: Icon(Icons.arrow_drop_down),),
+                    const SizedBox(height: 5),
+                    const CommonTextField(hText: "Choose Avaliable Date*",icon: Icon(Icons.arrow_drop_down),),
+                    const SizedBox(height: 5),
                     CommonButton(buttonName: "Book Appointment", onTap: (){})
                   ],
                 ),

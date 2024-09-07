@@ -1,3 +1,4 @@
+import 'package:doctor_appointment_project/view/screen/appointment_info/appointment_info.dart';
 import 'package:doctor_appointment_project/view/screen/appointment_info/doctor_book_appoin.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/doctor_info.dart';
 import 'package:doctor_appointment_project/view/screen/splash/splash_screen.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DoctorBookAppoin(),
+      home: DoctorInfo(),
     );
   }
 }

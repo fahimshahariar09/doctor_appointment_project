@@ -31,14 +31,14 @@ class DoctorInfo extends StatelessWidget {
                 const SizedBox(width: 10),
               ],
             ),
-            SizedBox(height: 5),
-            Row(
+            const SizedBox(height: 5),
+            const Row(
               children: [
                 Icon(Icons.arrow_back),
                 SizedBox(width: 5),
                 Text(
                   "Doctor Info",
-                  style: TextStyle(fontSize: 15),
+                  style: TextStyle(fontSize: 15,fontWeight: FontWeight.w500),
                 ),
               ],
             ),
@@ -51,7 +51,7 @@ class DoctorInfo extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SizedBox(height: 10),
+                      const SizedBox(height: 10),
                       Image.asset(
                         AppIcon.dlist1,
                         fit: BoxFit.fill,
@@ -66,8 +66,8 @@ class DoctorInfo extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                         ),
                       ),
-                      SizedBox(height: 10),
-                      Text(
+                      const SizedBox(height: 10),
+                      const Text(
                         "MBBS, phd(Neurolog) (ITALY),\nMsc(Enocrinology) (UK)",
                         style: TextStyle(
                           fontSize: 18,
@@ -75,12 +75,12 @@ class DoctorInfo extends StatelessWidget {
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       CommonButton(
                           buttonName: "Booking Now",
                           textColor: Colors.white,
                           onTap: () {}),
-                      SizedBox(height: 5),
+                      const SizedBox(height: 5),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -94,11 +94,11 @@ class DoctorInfo extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(5),
                                   color: Colors.blue,
                                 ),
-                                child: Center(child: const Text("Neurologist")),
+                                child: const Center(child: Text("Neurologist")),
                               )
                             ],
                           ),
-                          Row(
+                          const Row(
                             children: [
                               Text(
                                 "Expreience: ",
@@ -111,8 +111,8 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Row(
+                      const SizedBox(height: 10),
+                      const Row(
                         children: [
                           Text(
                             "Working: ",
@@ -126,8 +126,8 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Row(
+                      const SizedBox(height: 10),
+                      const Row(
                         children: [
                           Text(
                             "BMDC Number: ",
@@ -140,8 +140,8 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Row(
+                      const SizedBox(height: 10),
+                      const Row(
                         children: [
                           Text("Chamber & Time:",
                               style: TextStyle(
@@ -150,8 +150,8 @@ class DoctorInfo extends StatelessWidget {
                               )),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      ExpansionTile(
+                      const SizedBox(height: 10),
+                      const ExpansionTile(
                         title: Text(
                           "Victoria Healthcare",
                           style: TextStyle(
@@ -160,7 +160,7 @@ class DoctorInfo extends StatelessWidget {
                         ),
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Column(
                               children: [
                                 Row(
@@ -222,7 +222,7 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      ExpansionTile(
+                      const ExpansionTile(
                         title: Text(
                           "Delta Health Care, Mymensingh Ltd",
                           style: TextStyle(
@@ -231,7 +231,7 @@ class DoctorInfo extends StatelessWidget {
                         ),
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Column(
                               children: [
                                 Row(
@@ -293,7 +293,7 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      ExpansionTile(
+                      const ExpansionTile(
                         title: Text(
                           "Labaid Diagnostic Mymensingh",
                           style: TextStyle(
@@ -302,7 +302,7 @@ class DoctorInfo extends StatelessWidget {
                         ),
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(left: 20),
+                            padding: EdgeInsets.only(left: 20),
                             child: Column(
                               children: [
                                 Row(
@@ -364,8 +364,8 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 5),
-                      Row(
+                      const SizedBox(height: 5),
+                      const Row(
                         children: [
                           Text(
                             "About",
@@ -373,11 +373,11 @@ class DoctorInfo extends StatelessWidget {
                           ),
                         ],
                       ),
-                      SizedBox(height: 10),
-                      Text(
+                      const SizedBox(height: 10),
+                      const Text(
                           "www.drkparvez.com I am woeking in Neurology and diabetes more then 19 years. I have visited all kind of neurological problem like"),
-                      SizedBox(height: 3),
-                      Text(
+                      const SizedBox(height: 3),
+                      const Text(
                           "stroke,headache,vertigo,tinitus,tremor, low back pain,neck pain,facial daviation,hand and feet weakness, numbness,tingiling sensation,all kind of nerve and spine problem, paekinson disesases, epilepsy,momory problem,migraine, sinusitis and diabetes,miltiple joint pain,numbness and tingiling sensation boyh upper and lower limb,PHD, i had traning from Royal infarmary Hospital, Edinburgh, London.post-graduation research fellowship in Rome University, Hospital Italy, and had traning from from Germany, One year postgraduate traning from Dhaka medical Collage and hospital")
                     ],
                   ),
