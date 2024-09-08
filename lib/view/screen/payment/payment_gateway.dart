@@ -1,6 +1,8 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/screen/payment/payment_success.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class PaymentGateway extends StatelessWidget {
   const PaymentGateway({super.key});
@@ -38,23 +40,25 @@ class PaymentGateway extends StatelessWidget {
                 height: 80,
                 width: 80,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
-              Text(
+              const Text(
                 "Payment Gateway",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 18,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               CommonButton(
                   buttonName: "Payment ok",
                   buttonColor: Colors.grey,
-                  onTap: () {}),
+                  onTap: () {
+                    Get.to(const PaymentSuccess());
+                  }),
             ],
           ),
         ),

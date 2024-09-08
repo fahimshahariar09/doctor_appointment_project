@@ -7,6 +7,7 @@ class PaymentSuccess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue.shade50,
       appBar: AppBar(
         backgroundColor: Colors.blue.shade50,
         title: Image.asset(
@@ -27,21 +28,21 @@ class PaymentSuccess extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(height: 20),
-            Text(
-              "Payment Successful",
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
+        child: Center(
+          child: Column(
+            children: [
+              SizedBox(height: 20),
+              Text(
+                "Payment Successful",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            SizedBox(height: 100),
-            Image.asset(AppIcon.delta, height: 80, width: 80),
-          ],
+              SizedBox(height: 100),
+              Image.asset(AppIcon.delta, height: 80, width: 80),
+            ],
+          ),
         ),
       ),
     );

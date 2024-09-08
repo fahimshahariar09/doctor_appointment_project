@@ -1,5 +1,6 @@
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_rich_text.dart';
+import 'package:doctor_appointment_project/view/screen/payment/payment_gateway.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -118,7 +119,7 @@ class AppointmentInfo extends StatelessWidget {
                       CommonButton(
                           buttonName: "Payment For Booking",
                           onTap: () {
-                            Get.snackbar("title", "add success");
+                            Get.to(const PaymentGateway());
                           }),
                       const SizedBox(height: 10),
                       CommonButton(
