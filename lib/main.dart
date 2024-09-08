@@ -1,5 +1,4 @@
 import 'package:doctor_appointment_project/view/screen/payment/payment_gateway.dart';
-import 'package:doctor_appointment_project/view/screen/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
