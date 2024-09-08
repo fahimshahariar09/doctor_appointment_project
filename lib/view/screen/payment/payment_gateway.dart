@@ -1,4 +1,5 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
+import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
 import 'package:flutter/material.dart';
 
 class PaymentGateway extends StatelessWidget {
@@ -31,10 +32,28 @@ class PaymentGateway extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(AppIcon.delta,height: 80,width: 80,),
-              SizedBox(height: 50,),
-              Text("Payment Gateway",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 18,),),
-              SizedBox(height: 50,),
+              Image.asset(
+                AppIcon.delta,
+                height: 80,
+                width: 80,
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              Text(
+                "Payment Gateway",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+              SizedBox(
+                height: 50,
+              ),
+              // CommonButton(
+              //     buttonName: "Payment ok",
+              //     //buttonColor: Colors.grey,
+              //     onTap: () {}),
             ],
           ),
         ),
