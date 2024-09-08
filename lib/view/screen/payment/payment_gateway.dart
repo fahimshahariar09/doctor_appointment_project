@@ -28,7 +28,8 @@ class PaymentGateway extends StatelessWidget {
         ],
       ),
       body: SafeArea(
-        child: Center(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -50,10 +51,10 @@ class PaymentGateway extends StatelessWidget {
               SizedBox(
                 height: 50,
               ),
-              // CommonButton(
-              //     buttonName: "Payment ok",
-              //     //buttonColor: Colors.grey,
-              //     onTap: () {}),
+              CommonButton(
+                  buttonName: "Payment ok",
+                  buttonColor: Colors.grey,
+                  onTap: () {}),
             ],
           ),
         ),
