@@ -1,5 +1,6 @@
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_rich_text.dart';
+import 'package:doctor_appointment_project/view/screen/bottom_navi_bar/bottom_navi_bar.dart';
 import 'package:doctor_appointment_project/view/screen/payment/payment_gateway.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -126,7 +127,7 @@ class AppointmentInfo extends StatelessWidget {
                           buttonName: "Pay Later",
                           buttonColor: Colors.grey,
                           onTap: () {
-                            Get.snackbar("title", "add failed");
+                            Get.to(const BottomNaviBar());
                           })
                     ],
                   ),

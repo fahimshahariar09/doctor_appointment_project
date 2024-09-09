@@ -55,7 +55,7 @@ class Faq extends StatelessWidget {
                           itemBuilder: (context, index) {
                         return CommonCard(
                           onTap: () {
-                            Get.to(FaqPage());
+                            Get.to(const FaqPage());
                           },
                           text: 'How to Bank a Doctor ?',
                         );

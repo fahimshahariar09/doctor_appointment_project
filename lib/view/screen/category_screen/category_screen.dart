@@ -8,6 +8,7 @@ import 'package:doctor_appointment_project/view/screen/doctor_report/doctor_repo
 import 'package:doctor_appointment_project/view/screen/faq/faq.dart';
 import 'package:doctor_appointment_project/view/screen/hospital/hospital_list.dart';
 import 'package:doctor_appointment_project/view/screen/investigation/investigation.dart';
+import 'package:doctor_appointment_project/view/screen/notification/notification.dart';
 import 'package:doctor_appointment_project/view/screen/setting/setting.dart';
 import 'package:doctor_appointment_project/view/screen/support/support.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,9 @@ class CategoryScreen extends StatelessWidget {
               centerTitle: true,
               actions: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Get.to(const NotificationPage());
+                  },
                   icon: const Icon(
                     Icons.notifications_none_outlined,
                     size: 30,

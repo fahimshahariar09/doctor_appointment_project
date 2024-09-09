@@ -10,9 +10,9 @@ class CommonBookingSearch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 482,
+      height: 500,
       width: 350,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(0)),
       child: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Padding(
@@ -37,7 +37,7 @@ class CommonBookingSearch extends StatelessWidget {
                 ),
                 child: const Center(
                   child: Text(
-                    "Assoc. Prof. Dr. Khandker Parvez Ahamed",
+                    "Assoc. Prof. Dr. Khandker Parvez\nAhamed",
                     style: TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.w500,
