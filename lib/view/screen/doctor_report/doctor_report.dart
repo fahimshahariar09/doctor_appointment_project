@@ -1,3 +1,5 @@
+import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/common_widget/common_text_field.dart';
 import 'package:flutter/material.dart';
 
 class DoctorReport extends StatelessWidget {
@@ -7,42 +9,45 @@ class DoctorReport extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue.shade50,
-      body: SafeArea(
-        child: Column(
-          children: [
-            AppBar(
-              backgroundColor: Colors.blue.shade50,
-              title: Image.asset(
-                "assets/icon/Medico.png",
-                height: 32,
-              ),
-              centerTitle: true,
-              actions: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.notifications_none_outlined,
-                    size: 30,
-                  ),
-                ),
-                const SizedBox(
-                  width: 10,
-                ),
-              ],
+      appBar: AppBar(
+        backgroundColor: Colors.blue.shade50,
+        title: Image.asset(
+          "assets/icon/Medico.png",
+          height: 32,
+        ),
+        centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.notifications_none_outlined,
+              size: 30,
             ),
-            const Expanded(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.vertical,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text("Comming Soon",style: TextStyle(color: Colors.black12,fontWeight: FontWeight.w400,fontSize: 20),),
-                   ],
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Doctor Report",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 15,
                 ),
               ),
-            )
-          ],
+              SizedBox(height: 5),
+              CommonTextField(hText: 'Type Your Mobile Number'),
+              SizedBox(height: 5),
+              CommonButton(buttonName: "Track On",textColor: Colors.white, onTap: (){}),
+            ],
+          ),
         ),
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
 import 'package:doctor_appointment_project/view/screen/appointment_info/appointment_info.dart';
-import 'package:doctor_appointment_project/view/screen/appointment_info/widget/common_text_field.dart';
+import 'package:doctor_appointment_project/view/common_widget/common_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
