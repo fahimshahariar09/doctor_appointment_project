@@ -1,5 +1,7 @@
+import 'package:doctor_appointment_project/view/screen/language/language.dart';
 import 'package:doctor_appointment_project/view/screen/setting/widget/common_setting.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Setting extends StatelessWidget {
   const Setting({super.key});
@@ -51,7 +53,9 @@ class Setting extends StatelessWidget {
                       child: ListView(
                         children: [
                           CommonSetting(
-                            onTap: () {},
+                            onTap: () {
+                              Get.to(Language());
+                            },
                             text: 'Language',
                           ),
                           const SizedBox(

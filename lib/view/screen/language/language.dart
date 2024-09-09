@@ -1,5 +1,7 @@
 import 'package:doctor_appointment_project/view/screen/language/widget/language_card.dart';
+import 'package:doctor_appointment_project/view/screen/language/widget/language_dialog_card.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Language extends StatelessWidget {
   const Language({super.key});
@@ -30,15 +32,25 @@ class Language extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
+            Text(
               "Language",
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 15,
               ),
             ),
-            LanguageCard(text: "Bangla", onTap: (){}),
+            SizedBox(height: 15),
+            LanguageCard(text: "Bangla", onTap: (){
+              Get.dialog(
+                barrierDismissible: true,
+                Dialog(
+                  backgroundColor: Colors.white,
+                 child: LanguageDialogCard(),
+                )
+              );
+            }),
             const SizedBox(height: 10),
             LanguageCard(text: "English", onTap: (){}),
             const SizedBox(height: 10),
