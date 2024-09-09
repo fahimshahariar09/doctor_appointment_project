@@ -1,5 +1,7 @@
 import 'package:doctor_appointment_project/view/common_widget/common_card.dart';
+import 'package:doctor_appointment_project/view/screen/faq/faq_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Faq extends StatelessWidget {
   const Faq({super.key});
@@ -52,7 +54,9 @@ class Faq extends StatelessWidget {
                           itemCount: 3,
                           itemBuilder: (context, index) {
                         return CommonCard(
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(FaqPage());
+                          },
                           text: 'How to Bank a Doctor ?',
                         );
                       }),
