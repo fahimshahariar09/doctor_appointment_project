@@ -28,9 +28,9 @@ class AppointmentFrom extends StatelessWidget {
           const SizedBox(width: 10),
         ],
       ),
-      body: Center(
+      body: const Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10),
+          padding: EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
               Row(
@@ -58,7 +58,9 @@ class AppointmentFrom extends StatelessWidget {
                 fColor: Colors.green,
               ),
               SizedBox(height: 10),
-              AppointFormCard()
+              AppointFormCard(),
+              SizedBox(height: 10),
+              Text("An appointment copy has also been sent to you vai SMS")
             ],
           ),
         ),

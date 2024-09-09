@@ -1,6 +1,6 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
-import 'package:doctor_appointment_project/view/screen/appointment_info/doctor_book_appoin.dart';
+import 'package:doctor_appointment_project/view/screen/doctor_list/widget/common_booking_search.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -82,7 +82,14 @@ class DoctorInfo extends StatelessWidget {
                           buttonName: "Booking Now",
                           textColor: Colors.white,
                           onTap: () {
-                            Get.to(const DoctorBookAppoin());
+                            //  book appointment dialog
+                            Get.dialog(
+                              barrierDismissible: true,
+                              const Dialog(
+                                backgroundColor: Colors.white,
+                                child: CommonBookingSearch(),
+                              ),
+                            );
                           }),
                       const SizedBox(height: 5),
                       Row(

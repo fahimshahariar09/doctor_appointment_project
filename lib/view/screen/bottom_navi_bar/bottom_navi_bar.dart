@@ -31,7 +31,7 @@ class BottomNaviBar extends StatelessWidget {
                 kBottomRadius: 28.0,
                 notchColor: const Color(0xff22A6FE),
                 removeMargins: false,
-                bottomBarWidth: 500,
+                bottomBarWidth: MediaQuery.sizeOf(context).width,
                 showShadow: false,
                 durationInMilliSeconds: 300,
                 showBottomRadius: true,
