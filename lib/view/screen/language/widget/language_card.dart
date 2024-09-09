@@ -17,10 +17,10 @@ class LanguageCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         child: ListTile(
-          leading: Icon(Icons.arrow_forward_ios_rounded),
+          leading: const Icon(Icons.arrow_forward_ios_rounded),
           title: Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.w500
             ),

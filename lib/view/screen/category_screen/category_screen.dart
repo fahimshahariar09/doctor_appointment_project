@@ -1,4 +1,5 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
+import 'package:doctor_appointment_project/constants/images.dart';
 import 'package:doctor_appointment_project/view/common_widget/search_text_field.dart';
 import 'package:doctor_appointment_project/view/screen/category_screen/widget/category_card.dart';
 import 'package:doctor_appointment_project/view/screen/department/department.dart';
@@ -67,8 +68,7 @@ class CategoryScreen extends StatelessWidget {
                         scrollDirection: Axis.horizontal,
                         child: Row(
                           children: [
-                            Image.asset(
-                              "assets/slider/slide.png",
+                            Image.asset(AppImages.slide,
                               width: 216,
                               height: 140,
                               fit: BoxFit.cover,
@@ -77,7 +77,7 @@ class CategoryScreen extends StatelessWidget {
                               width: 5,
                             ),
                             Image.asset(
-                              "assets/slider/slide.png",
+                              AppImages.slide,
                               width: 216,
                               height: 140,
                               fit: BoxFit.cover,
@@ -86,7 +86,7 @@ class CategoryScreen extends StatelessWidget {
                               width: 5,
                             ),
                             Image.asset(
-                              "assets/slider/slide.png",
+                              AppImages.slide,
                               width: 216,
                               height: 140,
                               fit: BoxFit.cover,

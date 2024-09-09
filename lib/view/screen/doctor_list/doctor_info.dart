@@ -1,6 +1,5 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
-import 'package:doctor_appointment_project/view/common_widget/common_text_field.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/widget/common_booking_search.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -107,20 +106,20 @@ class DoctorInfo extends StatelessWidget {
                                     ),
                                     child: Column(
                                       children: [
-                                        Text(
+                                        const Text(
                                           "Select Chamber",
                                           style: TextStyle(
                                             fontSize: 20,
                                             fontWeight: FontWeight.w600,
                                           ),
                                         ),
-                                        SizedBox(height: 10),
+                                        const SizedBox(height: 10),
                                         CommonButton(
                                             buttonName: "Victoria Healthcare",
                                             buttonColor: Colors.white,
 
                                             onTap: () {}),
-                                        SizedBox(height: 5),
+                                        const SizedBox(height: 5),
                                         CommonButton(
                                             buttonName:
                                                 "Delta Health Care, Mymensingh Ltd",
@@ -135,7 +134,7 @@ class DoctorInfo extends StatelessWidget {
                                                 ),
                                               );
                                             }),
-                                        SizedBox(height: 5),
+                                        const SizedBox(height: 5),
                                         CommonButton(
                                             buttonName:
                                                 "Labaid Diagnostic Mymensingh",

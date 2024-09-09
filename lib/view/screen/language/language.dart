@@ -34,18 +34,18 @@ class Language extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
+            const Text(
               "Language",
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 15,
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             LanguageCard(text: "Bangla", onTap: (){
               Get.dialog(
                 barrierDismissible: true,
-                Dialog(
+                const Dialog(
                   backgroundColor: Colors.white,
                  child: LanguageDialogCard(),
                 )
@@ -55,7 +55,7 @@ class Language extends StatelessWidget {
             LanguageCard(text: "English", onTap: (){
               Get.dialog(
                   barrierDismissible: true,
-                  Dialog(
+                  const Dialog(
                     backgroundColor: Colors.white,
                     child: LanguageDialogCard(),
                   )
@@ -65,7 +65,7 @@ class Language extends StatelessWidget {
             LanguageCard(text: "Hindi", onTap: (){
               Get.dialog(
                   barrierDismissible: true,
-                  Dialog(
+                  const Dialog(
                     backgroundColor: Colors.white,
                     child: LanguageDialogCard(),
                   )
