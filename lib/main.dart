@@ -1,6 +1,4 @@
-import 'package:doctor_appointment_project/view/screen/doctor_report/doctor_report.dart';
-import 'package:doctor_appointment_project/view/screen/language/language.dart';
-import 'package:doctor_appointment_project/view/screen/setting/setting.dart';
+import 'package:doctor_appointment_project/view/screen/notification/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-        home: Setting(),
+        home: NotificationPage(),
     );
   }
 }

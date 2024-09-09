@@ -1,5 +1,6 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
 import 'package:doctor_appointment_project/view/common_widget/common_button.dart';
+import 'package:doctor_appointment_project/view/common_widget/common_text_field.dart';
 import 'package:doctor_appointment_project/view/screen/doctor_list/widget/common_booking_search.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -83,11 +84,72 @@ class DoctorInfo extends StatelessWidget {
                           textColor: Colors.white,
                           onTap: () {
                             //  book appointment dialog
+                            // Get.dialog(
+                            //   barrierDismissible: true,
+                            //   const Dialog(
+                            //     backgroundColor: Colors.white,
+                            //     child: CommonBookingSearch(),
+                            //   ),
+                            // );
+
+
                             Get.dialog(
+                              //Seletct chamber
                               barrierDismissible: true,
-                              const Dialog(
-                                backgroundColor: Colors.white,
-                                child: CommonBookingSearch(),
+                              Dialog(
+                                child: SizedBox(
+                                  height: 250,
+                                  //width: MediaQuery.sizeOf(context).width,
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 5,
+                                      vertical: 10,
+                                    ),
+                                    child: Column(
+                                      children: [
+                                        Text(
+                                          "Select Chamber",
+                                          style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                        ),
+                                        SizedBox(height: 10),
+                                        CommonButton(
+                                            buttonName: "Victoria Healthcare",
+                                            buttonColor: Colors.white,
+
+                                            onTap: () {}),
+                                        SizedBox(height: 5),
+                                        CommonButton(
+                                            buttonName:
+                                                "Delta Health Care, Mymensingh Ltd",
+                                            textColor: Colors.white,
+                                            onTap: () {
+                                              //  book appointment dialog
+                                              Get.dialog(
+                                                barrierDismissible: true,
+                                                const Dialog(
+                                                  backgroundColor: Colors.white,
+                                                  child: CommonBookingSearch(),
+                                                ),
+                                              );
+                                            }),
+                                        SizedBox(height: 5),
+                                        CommonButton(
+                                            buttonName:
+                                                "Labaid Diagnostic Mymensingh",
+                                            buttonColor: Colors.white,
+                                            onTap: () {})
+                                        // CommonTextField(
+                                        //   hText: "Labaid Diagnostic Mymensingh",
+                                        //   fColor: Colors.black,
+                                        //   fWeight: FontWeight.w500,
+                                        // ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                               ),
                             );
                           }),

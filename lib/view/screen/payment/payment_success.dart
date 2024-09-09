@@ -1,7 +1,5 @@
 import 'package:doctor_appointment_project/constants/icon.dart';
-import 'package:doctor_appointment_project/view/screen/appointment_from/appointment_from.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 class PaymentSuccess extends StatelessWidget {
   const PaymentSuccess({super.key});
@@ -31,24 +29,19 @@ class PaymentSuccess extends StatelessWidget {
       ),
       body: SafeArea(
         child: Center(
-          child: InkWell(
-            onTap: (){
-              Get.to(const AppointmentFrom());
-            },
-            child: Column(
-              children: [
-                const SizedBox(height: 20),
-                const Text(
-                  "Payment Successful",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                  ),
+          child: Column(
+            children: [
+              const SizedBox(height: 20),
+              const Text(
+                "Payment Successful",
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
                 ),
-                const SizedBox(height: 100),
-                Image.asset(AppIcon.delta, height: 80, width: 80),
-              ],
-            ),
+              ),
+              const SizedBox(height: 100),
+              Image.asset(AppIcon.delta, height: 80, width: 80),
+            ],
           ),
         ),
       ),

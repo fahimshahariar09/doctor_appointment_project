@@ -5,10 +5,17 @@ class CommonTextField extends StatelessWidget {
     super.key,
     required this.hText,
     this.icon,
+    this.fColor,
+    this.fSize,
+    this.fWeight, this.fillColor,
   });
 
   final String hText;
   final Icon? icon;
+  final Color? fColor;
+  final double? fSize;
+  final FontWeight? fWeight;
+  final Color? fillColor;
 
   @override
   Widget build(BuildContext context) {
@@ -23,10 +30,13 @@ class CommonTextField extends StatelessWidget {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
+        fillColor: fillColor,
+        filled: true,
         hintText: hText,
-        hintStyle: const TextStyle(
-          color: Colors.grey,
-        ),
+        hintStyle: TextStyle(
+            color: fColor ?? Colors.grey,
+            fontSize: fSize ?? 15,
+            fontWeight: fWeight ?? FontWeight.normal),
         suffixIcon: icon,
       ),
     );
