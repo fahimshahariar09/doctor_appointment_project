@@ -35,16 +35,16 @@ class DoctorReport extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Doctor Report",
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 15,
                 ),
               ),
-              SizedBox(height: 5),
-              CommonTextField(hText: 'Type Your Mobile Number'),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
+              const CommonTextField(hText: 'Type Your Mobile Number'),
+              const SizedBox(height: 5),
               CommonButton(buttonName: "Track On",textColor: Colors.white, onTap: (){}),
             ],
           ),
