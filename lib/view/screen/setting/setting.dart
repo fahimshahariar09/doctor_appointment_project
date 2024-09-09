@@ -66,12 +66,12 @@ class Setting extends StatelessWidget {
                             onTap: () {
                               Get.dialog(
                                   barrierDismissible: true,
-                                  Dialog(
+                                  const Dialog(
                                     backgroundColor: Colors.white,
                                     child: SizedBox(
                                       height: 100,
                                       child: Padding(
-                                        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                                        padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
                                         child: Column(
                                           children: [
                                             Text(
