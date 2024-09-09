@@ -30,7 +30,7 @@ class LanguageDialogCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 InkWell(
-                  onTap: (){
+                  onTap: () {
                     Get.back();
                   },
                   child: Container(
@@ -44,17 +44,23 @@ class LanguageDialogCard extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: (){
-                    Get.to(const Language());
-                    },
+                  onTap: () {
+                    Get.back(canPop: true);
+                    Get.snackbar('message', 'Change Language');
+                  },
                   child: Container(
                     height: 40,
                     width: 70,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: Colors.blue
-                    ),
-                    child: const Center(child: Text("Yes",style: TextStyle(color: Colors.white),)),
+                        borderRadius: BorderRadius.circular(5),
+                        color: Colors.blue),
+                    child: const Center(
+                        child: Text(
+                      "Yes",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    )),
                   ),
                 ),
               ],

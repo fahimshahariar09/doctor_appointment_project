@@ -37,7 +37,7 @@ class Language extends StatelessWidget {
             Text(
               "Language",
               style: TextStyle(
-                fontWeight: FontWeight.w500,
+                fontWeight: FontWeight.w600,
                 fontSize: 15,
               ),
             ),
@@ -52,9 +52,25 @@ class Language extends StatelessWidget {
               );
             }),
             const SizedBox(height: 10),
-            LanguageCard(text: "English", onTap: (){}),
+            LanguageCard(text: "English", onTap: (){
+              Get.dialog(
+                  barrierDismissible: true,
+                  Dialog(
+                    backgroundColor: Colors.white,
+                    child: LanguageDialogCard(),
+                  )
+              );
+            }),
             const SizedBox(height: 10),
-            LanguageCard(text: "Hindi", onTap: (){}),
+            LanguageCard(text: "Hindi", onTap: (){
+              Get.dialog(
+                  barrierDismissible: true,
+                  Dialog(
+                    backgroundColor: Colors.white,
+                    child: LanguageDialogCard(),
+                  )
+              );
+            }),
           ],
         ),
       ),

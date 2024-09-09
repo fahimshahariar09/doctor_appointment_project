@@ -44,7 +44,8 @@ class Setting extends StatelessWidget {
                     ),
                     const Text(
                       "Setting",
-                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
                     ),
                     const SizedBox(
                       height: 10,
@@ -54,7 +55,7 @@ class Setting extends StatelessWidget {
                         children: [
                           CommonSetting(
                             onTap: () {
-                              Get.to(Language());
+                              Get.to(const Language());
                             },
                             text: 'Language',
                           ),
@@ -62,7 +63,34 @@ class Setting extends StatelessWidget {
                             height: 10,
                           ),
                           CommonSetting(
-                            onTap: () {},
+                            onTap: () {
+                              Get.dialog(
+                                  barrierDismissible: true,
+                                  Dialog(
+                                    backgroundColor: Colors.white,
+                                    child: SizedBox(
+                                      height: 100,
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              "About US",
+                                              style: TextStyle(
+                                                fontSize: 15,
+                                                fontWeight: FontWeight.w500,
+                                              ),
+                                            ),
+                                            SizedBox(height: 10),
+                                            Text("Devlop By Classic IT"),
+                                            SizedBox(height: 5),
+                                            Text("Version: 1(Alpha)"),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ));
+                            },
                             text: 'About',
                           ),
                         ],

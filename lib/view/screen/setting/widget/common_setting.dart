@@ -11,9 +11,11 @@ class CommonSetting extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Card(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(10),
+        ),
         child: SizedBox(
-          height: 60,
+          height: 50,
           width: MediaQuery.sizeOf(context).width,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
