@@ -38,6 +38,8 @@ dependencies:
   get: ^4.6.6
   http: ^1.2.2
   animated_notch_bottom_bar: ^1.0.3
+#  video_player: ^2.8.5
+#  flick_video_player: ^0.5.0
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,25 @@
 import 'package:doctor_appointment_project/constants/images.dart';
 import 'package:flutter/material.dart';
 
-class FaqPage extends StatelessWidget {
+class FaqPage extends StatefulWidget {
   const FaqPage({super.key});
+
+  @override
+  State<FaqPage> createState() => _FaqPageState();
+}
+
+class _FaqPageState extends State<FaqPage> {
+  // late FlickManager flickManager;
+  // @override
+  // void initState() {
+  //   flickManager = FlickManager(
+  //     videoPlayerController: VideoPlayerController.networkUrl(
+  //       Uri.parse(
+  //           "https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4"),
+  //     ),
+  //   );
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -49,6 +66,7 @@ class FaqPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               Image.asset(AppImages.video),
+              // AspectRatio(aspectRatio: 20/10,child: FlickVideoPlayer(flickManager: flickManager),),
               const SizedBox(
                 height: 10,
               ),
