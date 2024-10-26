@@ -91,7 +91,6 @@ class DoctorInfo extends StatelessWidget {
                             //   ),
                             // );
 
-
                             Get.dialog(
                               //Seletct chamber
                               barrierDismissible: true,
@@ -117,7 +116,6 @@ class DoctorInfo extends StatelessWidget {
                                         CommonButton(
                                             buttonName: "Victoria Healthcare",
                                             buttonColor: Colors.white,
-
                                             onTap: () {}),
                                         const SizedBox(height: 5),
                                         CommonButton(
