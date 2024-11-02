@@ -73,7 +73,7 @@ class HospitalList extends StatelessWidget {
               const SizedBox(height: 15),
               Expanded(
                 child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
+                  scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
                       HospitalListCard(

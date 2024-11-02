@@ -1,4 +1,4 @@
-import 'package:doctor_appointment_project/view/screen/splash/splash_screen.dart';
+import 'package:doctor_appointment_project/view/screen/hospital/hospital_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-        home: SplashScreen(),
+        home: HospitalList(),
     );
   }
 }
