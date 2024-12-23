@@ -28,7 +28,7 @@ class HospitalListCard extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(3),
               child: Container(
-                height: 90,
+                height: 95,
                 width: 80,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
@@ -46,7 +46,7 @@ class HospitalListCard extends StatelessWidget {
                   style: const TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w400,
-                    fontSize: 15,
+                    fontSize: 13,
                   ),
                 ),
                 const SizedBox(height: 2),
@@ -58,7 +58,7 @@ class HospitalListCard extends StatelessWidget {
                     ),
                     Text(
                       category,
-                      style: const TextStyle(fontSize: 14),
+                      style: const TextStyle(fontSize: 12),
                     )
                   ],
                 ),
@@ -70,7 +70,7 @@ class HospitalListCard extends StatelessWidget {
                         const Icon(
                           Icons.location_on,
                           color: Colors.black,
-                          size: 18,
+                          size: 16,
                         ),
                         const SizedBox(width: 5),
                         Text(
@@ -80,7 +80,7 @@ class HospitalListCard extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(
-                      width: 30,
+                      width: 25,
                     ),
                     Row(
                       children: [

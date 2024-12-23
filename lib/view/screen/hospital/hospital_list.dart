@@ -140,7 +140,7 @@ class HospitalList extends StatelessWidget {
                         code: 'NAN',
                         onTap: () {},
                       ),
-                      const SizedBox(height: 10),
+                      const SizedBox(height: 5),
                       const Text("No Data More"),
                     ],
                   ),
