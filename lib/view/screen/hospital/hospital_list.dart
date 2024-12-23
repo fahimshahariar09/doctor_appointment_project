@@ -14,7 +14,7 @@ class HospitalList extends StatelessWidget {
       backgroundColor: Colors.blue.shade50,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 15),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             children: [
               AppBar(
@@ -70,7 +70,7 @@ class HospitalList extends StatelessWidget {
                   )
                 ],
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 10),
               Expanded(
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
